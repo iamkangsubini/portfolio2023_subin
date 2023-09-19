@@ -12,6 +12,7 @@ header nav .gnb {padding: 15px 0;}
 header nav .gnb a {
     font-size: 1.333rem; color: #212522; margin-right: 20px;
 }
+header nav .gnb a:hover {color:#fb84af;}
 header nav .sns {}
 header nav .sns p {font-size: 1.333rem; color: #212522;}
 
@@ -25,7 +26,7 @@ main #home {
 main #home h1 {
     width: 1100px; height: 777px; margin: 0 auto; padding-top: 146px;
 }
-main #home h1 img {width: 100%;}
+main #home h1 img {width: 85%;}
 /* skill */
 main #skill {
     background: url(../images/background/skill_background.png) no-repeat center;
@@ -37,6 +38,7 @@ main #skill .title {
 main #skill .title h1 {
     font-family: 배찌; font-size: 3.157rem; color: #212522;
     background: #ffe17b; padding: 5px 20px; border-radius: 40px;
+    display: inline-block;
 }
 main #skill .container {
     width: 1240px; margin: 0 auto; display: flex; flex-flow: column wrap; height: 670px; 
@@ -129,6 +131,7 @@ main #profile2 .container_bg .container .left .hobby_img {
     display: flex; flex-flow: row nowrap; align-items: center;
 }
 main #profile2 .container_bg .container .left .hobby_img a {
+    background-color: #335d72;
     width: 100px; height: 100px; margin-right: 50px;
 }
 main #profile2 .container_bg .container .left .hobby_img a img {width: 100%;}
@@ -147,127 +150,85 @@ main #profile2 .container_bg .container .right .license p {
     font-size: 1.333rem; line-height: 40px; color: #212522;
 }
 /* web */
-main #web {
+main .project_title_first {
     background: url(../images/background/web_background.png) no-repeat center; position: relative;
     background-size: cover; width: 100%; height: 1024px; position: relative;
 }
-main #web .mouse {
-    width: 220px; height: 220px; position: absolute ;
+main .p_t_f2 {background-image: url(../images/background/design_background.png);}
+main .project_title_first .target {
+    width: 220px; height: 220px; position: absolute;
     bottom: 170px; right: 480px;
 }
-main #web .mouse img {width: 100%;}
+main .project_title_first .spoid {bottom:600px; right:650px;}
+main .project_title_first .target img {width: 100%;}
 /* web1 */
-main #project_web1_bg {
-    background: #f58686; width: 100%; height: 1024px;
-}
-main #project_web1_bg .project_web1 {
-    width: 1194.6px; margin: 0 auto; display: flex; flex-flow: row nowrap; padding-top: 174px;
+main  .project_web {
+    width: 1200px; margin: 0 auto; display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
-    position: relative;
+    padding:50px 0;
 }
 /* info */
-main #project_web1_bg .project_web1 .info {
+main  .project_web .info {
     display: flex; flex-flow: column nowrap; align-items: flex-start;
 }
-main #project_web1_bg .project_web1 .info .title {
+main  .project_web .info .title {
     display: flex; flex-flow: column nowrap; align-items: flex-start;
-    margin-bottom: 50px;
 }
-main #project_web1_bg .project_web1 .info .title .number {
+main  .project_web .info .title .number {
     font-family: 배찌; font-size: 3.750rem; color: #212522;
     margin-bottom: 20px;
 }
-main #project_web1_bg .project_web1 .info .title .web_kind {
+main  .project_web .info .title .web_kind {
     font-family: 배찌; font-size: 3.157rem; color: #212522;
     margin-bottom: 20px;
 }
-main #project_web1_bg .project_web1 .info .title .name {
+main  .project_web .info .title .name {
     font-family: 배찌; font-size: 3.157rem; color: #212522;
     margin-bottom: 20px;
 }
-main #project_web1_bg .project_web1 .info .title .name em {
-    font-family: 배찌; font-size: 3.157rem; color: #cb0e05;
+main  .project_web .info .title .name em {
+    font-family: '배찌'; font-size: 3.157rem; color: #cb0e05;
 }
-main #project_web1_bg .project_web1 .info .title .skill_use {
-    background: lightgray;
-    display: flex; flex-flow: row wrap; width: 275px; height: 95px;
-    align-content: space-between;
+main  .project_web .info .title .skill_use {
+    display: flex; flex-flow:row wrap; margin-bottom:20px;
 }
-main #project_web1_bg .project_web1 .info .title .skill_use li {
-    width: 40px; height: 40px; margin-right: 15px;
+main  .project_web .info .title .skill_use li {width:30px; margin:0 10px 5px 0;}
+main  .project_web .info .title .skill_use li img {width:100%;}
+main  .project_web .info .view {
+    display:flex; flex-flow:column wrap;
 }
-main #project_web1_bg .project_web1 .info .title .skill_use li img {
-    width: 100%;
+main  .project_web .info .view a {
+    border-radius: 40px;
+    background: #EAD8C0;
+    padding:20px; margin-bottom:5px;
+    font-family: '배찌'; font-size:28px;
 }
-main #project_web1_bg .project_web1 .info .view {
-    display: flex; flex-flow: column nowrap;
-    align-items: flex-start; margin-bottom: 50px;
-}
-main #project_web1_bg .project_web1 .info .view a {
-    display: block; line-height: 70px; text-align: center;
-    padding: 0 20px; background: #ead8c0; border-radius: 40px;
-    font-size: 1.777rem; font-family: 배찌; color: #212522;
-    margin-bottom: 10px;
-}
-main #project_web1_bg .project_web1 .info .view .result {
-    margin-bottom: 0; color: #fff; background: #cb0e05;
-}
-main #project_web1_bg .project_web1 .info .contents {}
-main #project_web1_bg .project_web1 .info .contents p {
-    font-size: 1.777rem;  line-height: 50px; color: #212522;
-}
-main #project_web1_bg .project_web1 .info .contents p em {
-    font-size: 1.777rem; color: #cb0e05; 
-    text-decoration: underline;
-}
-main #project_web1_bg .project_web1 .priview {
-    width: 718.6px; height: 600px;
-    position: absolute; right: 0;
-}
-main #project_web1_bg .project_web1 .priview img {width: 100%;}
-/* web2 */
-main #project_web2 {}
-/* info */
-main #project_web2 .info {}
-main #project_web2 .info .title .number {}
-main #project_web2 .info .title .web_kind {}
-main #project_web2 .info .title .name {}
-main #project_web2 .info .title .name em {}
-main #project_web2 .info .title .skill_use {}
-main #project_web2 .info .title .skill_use li {}
-main #project_web2 .info .title .skill_use li img {}
-main #project_web2 .info .view {}
-main #project_web2 .info .view a {}
-main #project_web2 .info .view .result {}
-main #project_web2 .info .contents {}
-main #project_web2 .info .contents p {}
-main #project_web2 .info .contents p em {}
-main #project_web2 .priview {}
-main #project_web2 .priview img {}
-/* web3 */
-main #project_web3 {}
-/* info */
-main #project_web3 .info {}
-main #project_web3 .info .title {}
-main #project_web3 .info .title .number {}
-main #project_web3 .info .title .web_kind {}
-main #project_web3 .info .title .name {}
-main #project_web3 .info .title .name em {}
-main #project_web3 .info .title .skill_use {}
-main #project_web3 .info .title .skill_use li {}
-main #project_web3 .info .title .skill_use li img {}
-main #project_web3 .info .view {}
-main #project_web3 .info .view a {}
-main #project_web3 .info .view .result {}
-main #project_web3 .info .contents {}
-main #project_web3 .info .contents p {}
-main #project_web3 .info .contents p em {}
-main #project_web3 .priview {}
-main #project_web3 .priview img {}
+main  .project_web .info .view a:last-child {background:#CB0E05; color:#fff;}
+
+main  .p_web2 .info .view a {background:#BCC7FF;}
+main  .p_web2 .info .view a:last-child {background:#ffbb5c; color:#fff;}
+main  .p_web3 .info .view a {background:#caedff;}
+main  .p_web3 .info .view a:last-child {background:#9CC83A; color:#fff;}
+
+main  .project_web .info .view a:hover {filter:brightness(120%)}
+main  .project_web .info .view .result {}
+main  .project_web .info .contents {margin-top:20px;}
+main  .project_web .info .contents p {line-height:1.5; font-size:17px;}
+main  .project_web .info .contents p em {}
+main  .project_web .priview {}
+main  .project_web .priview img {}
 /* design */
 main #design {}
 main #design .spoid {}
 main #design .spoid img {}
+/* 공통 제목-page */
+main .project_design_title_page {
+    text-align: center; 
+}
+main .project_design_title_page .title {padding:50px 0;}
+main .project_design_title_page .title h2 {color:#fb84af;font-family: '배찌';margin-bottom:20px; font-size:37px;}
+main .project_design_title_page .title h1 {font-family: '배찌';font-size:50px;}
+main .project_design_title_page .contents {}
 /* detailed-page */
 main #project_design_detailed_page {}
 main #project_design_detailed_page .title {}
@@ -278,21 +239,21 @@ main #project_design_detailed_page .contents {}
 main #project_design_detailed_page .contents a {}
 main #project_design_detailed_page .contents a img {}
 /* card-news */
-main #project_design_card_news {}
+main #project_design_card_news {margin:200px 0;}
 main #project_design_card_news .title {}
 main #project_design_card_news .title h2 {}
 main #project_design_card_news .title h1 {}
 main #project_design_card_news .contents {}
-main #project_design_card_news .contents ul {}
-main #project_design_card_news .contents ul li {}
-main #project_design_card_news .contents ul li img {}
+main #project_design_card_news .contents ul {margin:0 auto; width:860px; display:flex; flex-flow:row wrap;}
+main #project_design_card_news .contents ul li {width:270px;}
+main #project_design_card_news .contents ul li img {width:100%;}
 /* sns-design */
-main #project_design_sns_design {}
+main #project_design_sns_design {margin-bottom:300px;}
 main #project_design_sns_design .title {}
 main #project_design_sns_design .title h2 {}
 main #project_design_sns_design .title h1 {}
 main #project_design_sns_design .contents {}
-main #project_design_sns_design .contents ul {}
+main #project_design_sns_design .contents ul {display:flex; width:1220px; margin:0 auto;}
 /* support, filler, taiwan */
 main #project_design_sns_design .contents ul li {}
 main #project_design_sns_design .contents ul li img {}
