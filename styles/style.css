@@ -1,4 +1,4 @@
-body, html {scroll-behavior: smooth;}
+body, html {scroll-behavior: smooth; background: #efefef;}
 /* header */
 header {width: 100%;  position: fixed; left: 0; top: 0;
     z-index: 999; padding: 48px 100px 0;}
@@ -24,9 +24,9 @@ main #home {
     background-size: cover; width: 100%; height: 1024px;
 }
 main #home h1 {
-    width: 1100px; height: 777px; margin: 0 auto; padding-top: 146px;
+    width: 849.42px; height: 600px; margin: 0 auto; padding-top: 170px;
 }
-main #home h1 img {width: 85%;}
+main #home h1 img {width: 100%;}
 /* skill */
 main #skill {
     background: url(../images/background/skill_background.png) no-repeat center;
@@ -112,28 +112,40 @@ main #profile2 .container_bg .container .left .career p {
 /* heaer-move */
 main #profile2 .container_bg .container .left .heart_move {
     display: flex; flex-flow: row nowrap; align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 main #profile2 .container_bg .container .left .heart_move .first_heart {
     width: 55px; height: 55px; margin-right: 100px;
+    animation: heart_forthandback 2.5s alternate infinite;
+}
+@keyframes heart_forthandback {
+    0% {transform: translate(0);}
+    25% {transform: translate(-20px,-20px);}
+    50% {transform: translate(0,-30px);}
+    75% {transform: translate(-20px,-40px);}
+    100% {transform: translate(0,-50px);}
 }
 main #profile2 .container_bg .container .left .heart_move .first_heart img {
     width: 100%;
 }
 main #profile2 .container_bg .container .left .heart_move .second_heart {
     width: 55px; height: 55px;
+    animation: heart_forthandback 2.5s alternate infinite;
+    
 }
 main #profile2 .container_bg .container .left .heart_move .second_heart img {
     width: 100%;
 }
 /* hobby_img */
 main #profile2 .container_bg .container .left .hobby_img {
-    display: flex; flex-flow: row nowrap; align-items: center;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 main #profile2 .container_bg .container .left .hobby_img a {
-    background-color: #335d72;
     width: 100px; height: 100px; margin-right: 50px;
 }
+main #profile2 .container_bg .container .left .hobby_img a:last-child {margin-right: 0;}
 main #profile2 .container_bg .container .left .hobby_img a img {width: 100%;}
 /* right */
 main #profile2 .container_bg .container .right {}
@@ -142,7 +154,7 @@ main #profile2 .container_bg .container .right .license {
     display: flex; flex-flow: column nowrap; align-items: center;
 }
 main #profile2 .container_bg .container .right .license h1 {
-    font-family: 배찌; font-size: 2.369rem; color: #212522;
+    font-family: '배찌'; font-size: 2.369rem; color: #212522;
     background: #ffb1b2; padding: 21.5px 20px; margin-bottom: 20px;
     border-radius: 40px;
 }
@@ -158,9 +170,14 @@ main .p_t_f2 {background-image: url(../images/background/design_background.png);
 main .project_title_first .target {
     width: 220px; height: 220px; position: absolute;
     bottom: 170px; right: 480px;
+    animation: target_big 1s linear alternate infinite;
 }
 main .project_title_first .spoid {bottom:600px; right:650px;}
 main .project_title_first .target img {width: 100%;}
+@keyframes target_big {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.3);}
+}
 /* web1 */
 main  .project_web {
     width: 1200px; margin: 0 auto; display: flex; flex-flow: row nowrap;
@@ -175,19 +192,25 @@ main  .project_web .info .title {
     display: flex; flex-flow: column nowrap; align-items: flex-start;
 }
 main  .project_web .info .title .number {
-    font-family: 배찌; font-size: 3.750rem; color: #212522;
+    font-family: '배찌'; font-size: 3.750rem; color: #212522;
     margin-bottom: 20px;
 }
 main  .project_web .info .title .web_kind {
-    font-family: 배찌; font-size: 3.157rem; color: #212522;
+    font-family: '배찌'; font-size: 3.157rem; color: #212522;
     margin-bottom: 20px;
 }
 main  .project_web .info .title .name {
-    font-family: 배찌; font-size: 3.157rem; color: #212522;
+    font-family: '배찌'; font-size: 3.157rem; color: #212522;
     margin-bottom: 20px;
 }
-main  .project_web .info .title .name em {
+main  .p_web1 .info .title .name em {
     font-family: '배찌'; font-size: 3.157rem; color: #cb0e05;
+}
+main  .p_web2 .info .title .name em {
+    font-family: '배찌'; font-size: 3.157rem; color: #ffc128;
+}
+main  .p_web3 .info .title .name em {
+    font-family: '배찌'; font-size: 3.157rem; color: #9cc83a;
 }
 main  .project_web .info .title .skill_use {
     display: flex; flex-flow:row wrap; margin-bottom:20px;
@@ -202,19 +225,31 @@ main  .project_web .info .view a {
     background: #EAD8C0;
     padding:20px; margin-bottom:5px;
     font-family: '배찌'; font-size:28px;
+    text-align: center; color: #212522;
 }
 main  .project_web .info .view a:last-child {background:#CB0E05; color:#fff;}
 
 main  .p_web2 .info .view a {background:#BCC7FF;}
-main  .p_web2 .info .view a:last-child {background:#ffbb5c; color:#fff;}
+main  .p_web2 .info .view a:last-child {background:#ffc128; color:#fff;}
 main  .p_web3 .info .view a {background:#caedff;}
 main  .p_web3 .info .view a:last-child {background:#9CC83A; color:#fff;}
 
 main  .project_web .info .view a:hover {filter:brightness(120%)}
 main  .project_web .info .view .result {}
 main  .project_web .info .contents {margin-top:20px;}
-main  .project_web .info .contents p {line-height:1.5; font-size:17px;}
-main  .project_web .info .contents p em {}
+main  .project_web .info .contents p {line-height:1.5; font-size:17px; color: #212522;}
+main  .p_web1 .info .contents p em {
+    line-height:1.5; font-size:17px; color: #cb0e05;
+    font-weight: 500; text-decoration: underline;
+}
+main  .p_web2 .info .contents p em {
+    line-height:1.5; font-size:17px; color: #ffc128;
+    font-weight: 500; text-decoration: underline;
+}
+main  .p_web3 .info .contents p em {
+    line-height:1.5; font-size:17px; color: #9cc83a;
+    font-weight: 500; text-decoration: underline;
+}
 main  .project_web .priview {}
 main  .project_web .priview img {}
 /* design */
@@ -227,7 +262,7 @@ main .project_design_title_page {
 }
 main .project_design_title_page .title {padding:50px 0;}
 main .project_design_title_page .title h2 {color:#fb84af;font-family: '배찌';margin-bottom:20px; font-size:37px;}
-main .project_design_title_page .title h1 {font-family: '배찌';font-size:50px;}
+main .project_design_title_page .title h1 {font-family: '배찌';font-size:50px; color: #212522;}
 main .project_design_title_page .contents {}
 /* detailed-page */
 main #project_design_detailed_page {}
