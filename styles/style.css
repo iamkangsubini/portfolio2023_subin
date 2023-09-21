@@ -1,0 +1,350 @@
+body, html {scroll-behavior: smooth; background: #efefef;}
+/* header */
+header {width: 100%;  position: fixed; left: 0; top: 0;
+    z-index: 999; padding: 48px 100px 0;}
+header nav {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    border-top: 1px solid #fb84af; border-bottom: 3px solid #fb84af;
+}
+/* gnb-bar */
+header nav .gnb {padding: 15px 0;}
+header nav .gnb a {
+    font-size: 1.333rem; color: #212522; margin-right: 20px;
+}
+header nav .gnb a:hover {color:#fb84af;}
+header nav .sns {}
+header nav .sns p {font-size: 1.333rem; color: #212522;}
+
+/* main */
+main {}
+/* home */
+main #home {
+    background: url(../images/background/home_background.png) no-repeat center;
+    background-size: cover; width: 100%; height: 1024px;
+}
+main #home h1 {
+    width: 849.42px; height: 600px; margin: 0 auto; padding-top: 170px;
+}
+main #home h1 img {width: 100%;}
+/* skill */
+main #skill {
+    background: url(../images/background/skill_background.png) no-repeat center;
+    background-size: cover; width: 100%; height: 1024px;
+}
+main #skill .title {
+    width: 1240px; margin: 0 auto; padding: 170px 0 60px;
+}
+main #skill .title h1 {
+    font-family: 배찌; font-size: 3.157rem; color: #212522;
+    background: #ffe17b; padding: 5px 20px; border-radius: 40px;
+    display: inline-block;
+}
+main #skill .container {
+    width: 1240px; margin: 0 auto; display: flex; flex-flow: column wrap; height: 670px; 
+}
+main #skill .container li {
+    margin-bottom: 40px; display: flex; flex-flow: row nowrap;
+    align-items: center; width: 50%;
+}
+main #skill .container li .icon {width: 55px; height: 55px; margin-right: 30px;}
+main #skill .container li .icon img {width: 100%;}
+main #skill .container li .contents {
+    font-size: 1.333rem; line-height: 32px; color: #212522;
+}
+/* profile */
+main #profile {
+    background: url(../images/background/profile_background.png) no-repeat center; position: relative;
+    background-size: cover; width: 100%; height: 1024px;
+}
+/* container-name, hobby */
+main #profile .container {
+    display: flex; flex-flow: column nowrap; align-items: center; padding: 190px 100px 180px 766px;
+}
+main #profile .container h1 {
+    font-weight: 700; font-size: 2.369rem; line-height: 47px; color: #212522;
+    margin-bottom: 50px; text-align: center;
+}
+main #profile .container h1 em {
+    font-weight: 700; font-size: 2.369rem; color: #fb84af;
+}
+main #profile .container h1 strong {
+    font-weight: 700; font-size: 3.157rem; color: #fb84af;
+}
+main #profile .container .name_title {
+    font-family: 배찌; font-size: 2.369rem; color: #212522; padding: 21.5px 20px;
+    background: #caedff; border-radius: 40px; margin-bottom: 20px;
+}
+main #profile .container .hobby_title {
+    font-family: 배찌; font-size: 2.369rem; padding: 21.5px 20px; background: #ffbb5c;
+    border-radius: 40px; margin-bottom: 20px;
+}
+main #profile .container p {
+    font-size: 1.333rem; line-height: 40px; color: #212522;
+}
+main #profile .container p:nth-child(3) {margin-bottom: 50px;}
+/* profile2 */
+main #profile2 {
+    background: url(../images/background/profile2_background.png) no-repeat center;
+    background-size: cover; width: 100%; height: 1024px;
+}
+/* container-all */
+main #profile2 .container_bg .container {
+    width: 1240px; margin: 0 auto; padding: 254px 22.5px 0; display: flex; flex-flow: row nowrap;
+    justify-content: space-between; 
+}
+/* left */
+main #profile2 .container_bg .container .left {
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+/* carrer */
+main #profile2 .container_bg .container .left .career {
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+main #profile2 .container_bg .container .left .career h1 {
+    font-family: 배찌; font-size: 2.369rem; color: #212522; background: #a8edd3; border-radius: 40px; margin-bottom: 20px;
+    padding: 21.5px 20px;
+}
+main #profile2 .container_bg .container .left .career p {
+    font-size: 1.333rem; line-height: 40px; color: #212522;
+    margin-bottom: 105px;
+}
+/* heaer-move */
+main #profile2 .container_bg .container .left .heart_move {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-bottom: 30px;
+}
+main #profile2 .container_bg .container .left .heart_move .first_heart {
+    width: 55px; height: 55px; margin-right: 100px;
+    animation: heart_forthandback 2.5s alternate infinite;
+}
+@keyframes heart_forthandback {
+    0% {transform: translate(0);}
+    25% {transform: translate(-20px,-20px);}
+    50% {transform: translate(0,-30px);}
+    75% {transform: translate(-20px,-40px);}
+    100% {transform: translate(0,-50px);}
+}
+main #profile2 .container_bg .container .left .heart_move .first_heart img {
+    width: 100%;
+}
+main #profile2 .container_bg .container .left .heart_move .second_heart {
+    width: 55px; height: 55px;
+    animation: heart_forthandback 2.5s alternate infinite;
+    
+}
+main #profile2 .container_bg .container .left .heart_move .second_heart img {
+    width: 100%;
+}
+/* hobby_img */
+main #profile2 .container_bg .container .left .hobby_img {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main #profile2 .container_bg .container .left .hobby_img a {
+    width: 100px; height: 100px; margin-right: 50px;
+}
+main #profile2 .container_bg .container .left .hobby_img a:last-child {margin-right: 0;}
+main #profile2 .container_bg .container .left .hobby_img a img {width: 100%;}
+/* right */
+main #profile2 .container_bg .container .right {}
+/* license */
+main #profile2 .container_bg .container .right .license {
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+main #profile2 .container_bg .container .right .license h1 {
+    font-family: '배찌'; font-size: 2.369rem; color: #212522;
+    background: #ffb1b2; padding: 21.5px 20px; margin-bottom: 20px;
+    border-radius: 40px;
+}
+main #profile2 .container_bg .container .right .license p {
+    font-size: 1.333rem; line-height: 40px; color: #212522;
+}
+/* web */
+main .project_title_first {
+    background: url(../images/background/web_background.png) no-repeat center; position: relative;
+    background-size: cover; width: 100%; height: 1024px; position: relative;
+}
+main .p_t_f2 {background-image: url(../images/background/design_background.png);}
+main .project_title_first .target {
+    width: 220px; height: 220px; position: absolute;
+    bottom: 170px; right: 480px;
+    animation: target_big 1s linear alternate infinite;
+}
+main .project_title_first .spoid {bottom:600px; right:650px;}
+main .project_title_first .target img {width: 100%;}
+@keyframes target_big {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.3);}
+}
+/* web1 */
+main  .project_web {
+    width: 1200px; margin: 0 auto; display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding:50px 0;
+}
+/* info */
+main  .project_web .info {
+    display: flex; flex-flow: column nowrap; align-items: flex-start;
+}
+main  .project_web .info .title {
+    display: flex; flex-flow: column nowrap; align-items: flex-start;
+}
+main  .project_web .info .title .number {
+    font-family: '배찌'; font-size: 3.750rem; color: #212522;
+    margin-bottom: 20px;
+}
+main  .project_web .info .title .web_kind {
+    font-family: '배찌'; font-size: 3.157rem; color: #212522;
+    margin-bottom: 20px;
+}
+main  .project_web .info .title .name {
+    font-family: '배찌'; font-size: 3.157rem; color: #212522;
+    margin-bottom: 20px;
+}
+main  .p_web1 .info .title .name em {
+    font-family: '배찌'; font-size: 3.157rem; color: #cb0e05;
+}
+main  .p_web2 .info .title .name em {
+    font-family: '배찌'; font-size: 3.157rem; color: #ffc128;
+}
+main  .p_web3 .info .title .name em {
+    font-family: '배찌'; font-size: 3.157rem; color: #9cc83a;
+}
+main  .project_web .info .title .skill_use {
+    display: flex; flex-flow:row wrap; margin-bottom:20px;
+}
+main  .project_web .info .title .skill_use li {width:30px; margin:0 10px 5px 0;}
+main  .project_web .info .title .skill_use li img {width:100%;}
+main  .project_web .info .view {
+    display:flex; flex-flow:column wrap;
+}
+main  .project_web .info .view a {
+    border-radius: 40px;
+    background: #EAD8C0;
+    padding:20px; margin-bottom:5px;
+    font-family: '배찌'; font-size:28px;
+    text-align: center; color: #212522;
+}
+main  .project_web .info .view a:last-child {background:#CB0E05; color:#fff;}
+
+main  .p_web2 .info .view a {background:#BCC7FF;}
+main  .p_web2 .info .view a:last-child {background:#ffc128; color:#fff;}
+main  .p_web3 .info .view a {background:#caedff;}
+main  .p_web3 .info .view a:last-child {background:#9CC83A; color:#fff;}
+
+main  .project_web .info .view a:hover {filter:brightness(120%)}
+main  .project_web .info .view .result {}
+main  .project_web .info .contents {margin-top:20px;}
+main  .project_web .info .contents p {line-height:1.5; font-size:17px; color: #212522;}
+main  .p_web1 .info .contents p em {
+    line-height:1.5; font-size:17px; color: #cb0e05;
+    font-weight: 500; text-decoration: underline;
+}
+main  .p_web2 .info .contents p em {
+    line-height:1.5; font-size:17px; color: #ffc128;
+    font-weight: 500; text-decoration: underline;
+}
+main  .p_web3 .info .contents p em {
+    line-height:1.5; font-size:17px; color: #9cc83a;
+    font-weight: 500; text-decoration: underline;
+}
+main  .project_web .priview {}
+main  .project_web .priview img {}
+/* design */
+main #design {}
+main #design .spoid {}
+main #design .spoid img {}
+/* 공통 제목-page */
+main .project_design_title_page {
+    text-align: center; 
+}
+main .project_design_title_page .title {padding:50px 0;}
+main .project_design_title_page .title h2 {color:#fb84af;font-family: '배찌';margin-bottom:20px; font-size:37px;}
+main .project_design_title_page .title h1 {font-family: '배찌';font-size:50px; color: #212522;}
+main .project_design_title_page .contents {}
+/* detailed-page */
+main #project_design_detailed_page {}
+main #project_design_detailed_page .title {}
+main #project_design_detailed_page .title h2 {}
+main #project_design_detailed_page .title h1 {}
+main #project_design_detailed_page .contents {
+    display:flex; justify-content: space-between;
+    width:1000px; margin:0 auto; height: 620px;
+}
+/* dumpling, book, brush */
+main #project_design_detailed_page .contents a {
+    width: 300px; display: block;
+    border: 1px solid #000; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%);
+}
+main #project_design_detailed_page .contents .brush {
+    background-image: url(../images/design/detailed_page/brush.jpg);
+}
+main #project_design_detailed_page .contents .book {
+    background-image: url(../images/design/detailed_page/book.jpg);
+}
+main #project_design_detailed_page .contents .dumpling {
+    background-image: url(../images/design/detailed_page/dumpling.jpg);
+}
+/* card-news */
+main #project_design_card_news {margin:200px 0;}
+main #project_design_card_news .title {}
+main #project_design_card_news .title h2 {}
+main #project_design_card_news .title h1 {}
+main #project_design_card_news .contents {}
+main #project_design_card_news .contents ul {
+    margin:0 auto; width:860px; height: 565px;
+    display:flex; flex-flow:row wrap;
+    justify-content: space-between; align-content: space-between;
+}
+main #project_design_card_news .contents ul li {}
+main #project_design_card_news .contents ul li a {
+    width: 270px; height: 270px; display: block;
+    border: 1px solid #000; border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%); background: #d9d9d9;
+}
+/* sns-design */
+main #project_design_sns_design {margin-bottom:300px;}
+main #project_design_sns_design .title {}
+main #project_design_sns_design .title h2 {}
+main #project_design_sns_design .title h1 {}
+main #project_design_sns_design .contents {}
+main #project_design_sns_design .contents ul {
+    display:flex; flex-flow: row wrap; justify-content: space-between;
+    width:1220px; margin:0 auto; height: 600px;
+    align-content: space-between;
+}
+/* sns-a */
+main #project_design_sns_design .contents ul li {}
+main #project_design_sns_design .contents ul li a {
+    width: 290px; height: 290px; display: block;
+    border: 1px solid #000; border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%);
+    background-size: cover;
+}
+main #project_design_sns_design .contents ul li .personal_color {
+    background-image: url(../images/design/sns/1personal_color.jpg);
+}
+main #project_design_sns_design .contents ul li .ski {
+    background-image: url(../images/design/sns/2ski.jpg);
+}
+main #project_design_sns_design .contents ul li .shipping {
+    background-image: url(../images/design/sns/3shipping.jpg);
+}
+main #project_design_sns_design .contents ul li .orange {
+    background-image: url(../images/design/sns/4orange.jpg);
+}
+main #project_design_sns_design .contents ul li .taiwan {
+    background-image: url(../images/design/sns/5taiwan.jpg);
+}
+main #project_design_sns_design .contents ul li .filler {
+    background-image: url(../images/design/sns/6filler.jpg);
+}
+main #project_design_sns_design .contents ul li .support {
+    background-image: url(../images/design/sns/7support.jpg);
+}
+main #project_design_sns_design .contents ul li .blank {
+    background: #d9d9d9;
+}
