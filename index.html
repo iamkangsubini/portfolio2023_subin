@@ -12,8 +12,25 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        #sns_popup {
+            position:fixed; left:0; top:0;
+            width:100%; height:100vh; z-index:9999;
+            background:rgba(255,255,255,0.5);
+        }
+        #sns_popup .contents {
+            width:800px; height:800px;
+            background:#eee; margin:50px auto 0;
+        }
+        #sns_popup .contents img {width:100%;}
+    </style>
 </head>
 <body>
+    <div id="sns_popup">
+        <div class="contents">
+            <img src="" alt="">
+        </div>
+    </div>
     <!-- header -->
     <header>
         <nav>
@@ -281,5 +298,27 @@
             </div>
         </section>
     </main>
+    <script>
+
+        const sns_popup = document.querySelector('#sns_popup')
+        const sns_a = document.querySelectorAll('#project_design_sns_design a')
+        const sns_popup_img = document.querySelector('#sns_popup img')
+        
+        sns_popup.style.display = 'none'
+
+        sns_a.forEach(function(t,i,a){
+            console.log(t,i,a)
+            t.addEventListener('click',function(e){
+                e.preventDefault()
+                sns_popup.style.display = 'block'
+                sns_popup_img.src = `./images/design/sns/sns${i+1}.jpg`
+            })
+        })
+
+        sns_popup.addEventListener('click',function(){
+            sns_popup.style.display = 'none'
+        })
+
+    </script>
 </body>
 </html>
