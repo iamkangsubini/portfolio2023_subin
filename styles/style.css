@@ -1,3 +1,5 @@
+/* 반응형웹 */
+header, main, footer {min-width: 1240px;}
 body, html {scroll-behavior: smooth; background: #efefef;}
 /* header */
 header {width: 100%;  position: fixed; left: 0; top: 0;
