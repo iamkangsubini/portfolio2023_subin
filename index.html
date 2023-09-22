@@ -31,11 +31,6 @@
     </style>
 </head>
 <body>
-    <div id="sns_popup">
-        <div class="contents">
-            <img src="" alt="">
-        </div>
-    </div>
     <!-- header -->
     <header>
         <nav>
@@ -261,9 +256,9 @@
                 <h1>상세페이지 & 프로모션 디자인</h1>
             </div>
             <div class="contents">
-                <a href="#" class="brush"></a>
-                <a href="#" class="book"></a>
-                <a href="#" class="dumpling"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
             </div>
         </section>
         <!-- 상세페이지 팝업 -->
@@ -272,7 +267,6 @@
                 <img src="" alt="">
             </div>
         </div>
-
         <!-- card-news -->
         <section id="project_design_card_news" class="project_design_title_page">
             <div class="title">
@@ -296,7 +290,6 @@
                 <img src="" alt="">
             </div>
         </div>
-
         <!-- sns-design -->
         <section id="project_design_sns_design" class="project_design_title_page">
             <div class="title">
@@ -316,6 +309,12 @@
                 </ul>
             </div>
         </section>
+        <!-- sns디자인 팝업 -->
+        <div id="sns_popup">
+            <div class="contents">
+                <img src="" alt="">
+            </div>
+        </div>
     </main>
     <script src="./script/script.js"></script>
     <script>
@@ -334,6 +333,21 @@
         })
 
         //상세페이지 팝업
+        const detail_a = document.querySelectorAll('#project_design_detailed_page a')
+        const detail_popup = document.querySelector('#detail_popup')
+        const detail_popup_img = document.querySelector('#detail_popup img')
+        detail_a.forEach(function(t,i,a){
+            console.log(t,i,a)
+            t.addEventListener('click',function(e){
+                e.preventDefault();
+                detail_popup.style.display = 'block'
+                detail_popup_img.src = `./images/design/detailed_page/detail${i+1}.jpg`
+            })
+        })
+
+        detail_popup.addEventListener('click',function(){
+            detail_popup.style.display = 'none'
+        })
 
     </script>
 </body>
