@@ -288,23 +288,23 @@ main #project_design_detailed_page .contents .book {
 main #project_design_detailed_page .contents .dumpling {
     background-image: url(../images/design/detailed_page/dumpling.jpg);
 }
+
 /* card-news */
 main #project_design_card_news {margin:200px 0;}
 main #project_design_card_news .title {}
 main #project_design_card_news .title h2 {}
 main #project_design_card_news .title h1 {}
-main #project_design_card_news .contents {}
-main #project_design_card_news .contents ul {
-    margin:0 auto; width:860px; height: 565px;
-    display:flex; flex-flow:row wrap;
-    justify-content: space-between; align-content: space-between;
+main #project_design_card_news .contents {
+    display:flex; justify-content: space-between;
+    width: 1180px; margin: 0 auto;
 }
-main #project_design_card_news .contents ul li {}
-main #project_design_card_news .contents ul li a {
-    width: 270px; height: 270px; display: block;
+main #project_design_card_news .contents span {
+    width: 185px; height: 185px; display: block;
     border: 1px solid #000; border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%); background: #d9d9d9;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%);
+    background: #d9d9d9;
 }
+
 /* sns-design */
 main #project_design_sns_design {margin-bottom:300px;}
 main #project_design_sns_design .title {}
