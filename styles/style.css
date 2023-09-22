@@ -302,9 +302,26 @@ main #project_design_card_news .contents span {
     width: 185px; height: 185px; display: block;
     border: 1px solid #000; border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%);
-    background: #d9d9d9;
+    background: #d9d9d9; background-size: cover;
 }
-
+main #project_design_card_news .contents span:first-child {
+    background-image: url(../images/design/card_news/card1-1.png);
+}
+main #project_design_card_news .contents span:nth-child(2) {
+    background-image: url(../images/design/card_news/card1-2.png);
+}
+main #project_design_card_news .contents span:nth-child(3) {
+    background-image: url(../images/design/card_news/card1-3.png);
+}
+main #project_design_card_news .contents span:nth-child(4) {
+    background-image: url(../images/design/card_news/card1-4.png);
+}
+main #project_design_card_news .contents span:nth-child(5) {
+    background-image: url(../images/design/card_news/card1-5.png);
+}
+main #project_design_card_news .contents span:last-child {
+    background-image: url(../images/design/card_news/card1-6.png);
+}
 /* sns-design */
 main #project_design_sns_design {margin-bottom:300px;}
 main #project_design_sns_design .title {}
