@@ -13,16 +13,21 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <style>
-        #sns_popup {
+        #sns_popup, #card_popup, #detail_popup {
             position:fixed; left:0; top:0;
             width:100%; height:100vh; z-index:9999;
             background:rgba(255,255,255,0.5);
+            display:none;
         }
-        #sns_popup .contents {
-            width:800px; height:800px;
+        #sns_popup .contents,
+        #card_popup .contents,
+        #detail_popup .contents {
+            width:800px; height:800px; overflow-y:auto;
             background:#eee; margin:50px auto 0;
         }
-        #sns_popup .contents img {width:100%;}
+        #sns_popup .contents img, 
+        #card_popup .contents img, 
+        #detail_popup .contents img {width:100%;}
     </style>
 </head>
 <body>
@@ -261,6 +266,12 @@
                 <a href="#" class="dumpling"></a>
             </div>
         </section>
+        <!-- 상세페이지 팝업 -->
+        <div id="detail_popup">
+            <div class="contents">
+                <img src="" alt="">
+            </div>
+        </div>
 
         <!-- card-news -->
         <section id="project_design_card_news" class="project_design_title_page">
@@ -268,15 +279,23 @@
                 <h2>ETC Design</h2>
                 <h1>카드 뉴스 디자인</h1>
             </div>
-            <a herf="#" class="contents">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+            <div class="c">
+                <a href="#" class="contents">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </section>
+        <!-- 카드뉴스 팝업 -->
+        <div id="card_popup">
+            <div class="contents">
+                <img src="" alt="">
+            </div>
+        </div>
 
         <!-- sns-design -->
         <section id="project_design_sns_design" class="project_design_title_page">
@@ -299,5 +318,23 @@
         </section>
     </main>
     <script src="./script/script.js"></script>
+    <script>
+        //카드뉴스 팝업
+        const card_a = document.querySelectorAll('#project_design_card_news a')
+        const card_popup = document.querySelector('#card_popup') //css에서 미리 숨겨둠 
+        const card_popup_img = document.querySelector('#card_popup img')
+        card_a[0].addEventListener('click',function(e){
+            e.preventDefault();
+            card_popup.style.display = 'block'
+            card_popup_img.src=`./images/design/card_news/view.jpg`
+        })
+
+        card_popup.addEventListener('click',function(){
+            card_popup.style.display = 'none'
+        })
+
+        //상세페이지 팝업
+
+    </script>
 </body>
 </html>
