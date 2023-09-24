@@ -1,3 +1,4 @@
+//1. 디자인 팝업
 //상세페이지 팝업
 const detail_a = document.querySelectorAll('#project_design_detailed_page a')
 const detail_popup = document.querySelector('#detail_popup')
@@ -45,4 +46,29 @@ sns_a.forEach(function(t,i,a){
 
 sns_popup.addEventListener('click',function(){
     sns_popup.style.display = 'none'
+})
+
+//2. 취미아이콘 팝업
+//다이어리 팝업
+const diary_popup = document.querySelector('#diary_popup')
+const diary_a = document.querySelector('.hobby_img .diary')
+const diary_img = document.querySelector('#diary_popup img')
+
+diary_a.addEventListener('mouseover',function(e){
+    e.preventDefault();
+    diary_popup.style.display = 'block'
+    diary_img.src = './images/mydiary.png'
+})
+
+diary_popup.addEventListener('click',function(){
+    diary_popup.style.display = 'none'
+})
+
+//3. 마우스
+const mouse_img = document.querySelector('#mouse')
+console.log(mouse_img)
+window.addEventListener('mousemove',function(e){
+    // console.log(e)
+    mouse_img.style.left = `${e.clientX}px` //~벤틱기호
+    mouse_img.style.top = `${e.clientY}px` //~벤틱기호
 })

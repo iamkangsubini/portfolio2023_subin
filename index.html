@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <style>
+        /* 1. 디자인 팝업 */
         #sns_popup, #card_popup, #detail_popup {
             position:fixed; left:0; top:0;
             width:100%; height:100vh; z-index:9999;
@@ -29,13 +30,42 @@
             width:800px; height:800px; overflow-y:auto;
             background:#eee; margin:50px auto 0;
         }
-
         #sns_popup .contents img, 
         #card_popup .contents img, 
         #detail_popup .contents img {width:100%;}
+        /* 2. 취미아이콘 팝업 */
+        #diary_popup {
+            position:fixed; left:0; top:0;
+            width:100%; height:100vh; z-index:9998;
+            background:rgba(255,255,255,0.5);
+            display:none;
+        }
+        #diary_popup .contents {
+            width:500px; height:500px;
+            background:#eee; margin: 200px auto 0;
+        }
+        #diary_popup .contents img {width:100%;}
+        /* 3. 마우스 */
+        #mouse {
+            width:90px; height:90px;
+            /* background:#fff; */
+            /* border:3px solid #FF697B; */
+            background:url(./images/mouseimg_cony.png) no-repeat center;
+            background-size:cover;
+            /* border-radius:50%; */
+            /* 화면 최상단 스크롤 상관없이 고정 마우스 따라가는 CSS */
+            position:fixed; left:0; top:0; z-index:999;
+                transform: translate(-20%, -45%); /*마우스 중심에 오게 위치 조정*/
+                transition:all 0.2 linear; /* 단순히 고정되서 따라오는 것이 아닌 뒤늦게따라오는 느낌 */
+                /* 필수속성:마우스 따라다니는 이미지 만들경우 */
+            /* (위)링크, 버튼 등 선택이 안되는 문제 해결 */
+            pointer-events:none;
+        }
     </style>
 </head>
 <body>
+    <!-- 마우스 -->
+    <div id="mouse"></div>
     <!-- header -->
     <header>
         <nav>
@@ -131,9 +161,9 @@
                         </div>
                         <!-- hobby-img -->
                         <div class="hobby_img">
-                            <a href="#" target="_blank"><img src="./images/diary.png" alt=""></a>
-                            <a href="#" target="_blank"><img src="./images/coloring.png" alt=""></a>
-                            <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%8B%A0%EC%B9%B4%EC%9D%B4%EB%A7%88%EC%BD%94%ED%86%A0" target="_blank"><img src="./images/movie.png" alt=""></a>
+                            <a href="#" target="_blank" class="diary"><img src="./images/diary.png" alt=""></a>
+                            <a href="#" target="_blank" class="coloring"><img src="./images/coloring.png" alt=""></a>
+                            <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%8B%A0%EC%B9%B4%EC%9D%B4%EB%A7%88%EC%BD%94%ED%86%A0+%EC%98%81%ED%99%94" target="_blank"><img src="./images/movie.png" alt=""></a>
                         </div>
                     </div>
                     <!-- right -->
@@ -147,6 +177,12 @@
                 </div>
             </div>
         </section>
+        <!-- 취미아이콘 팝업 -->
+        <div id="diary_popup">
+            <div class="contents">
+                <img src="" alt="">
+            </div>
+        </div>
         <!-- web -->
         <section class="project_title_first" id="web_section">
             <p class="target mouse"><img src="./images/mouse.png" alt=""></p>
