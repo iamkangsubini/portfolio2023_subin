@@ -57,7 +57,7 @@ banner_a.forEach(function(t,i,a){
     t.addEventListener('click',function(e){
         e.preventDefault();
         banner_popup.style.display = 'block'
-        banner_popup_img.src = `./images/design/banner/banner${i+1}_js.jpg`
+        banner_popup_img.src = `./images/design/banner/banner${i+1}.jpg`
     })
 })  
 
