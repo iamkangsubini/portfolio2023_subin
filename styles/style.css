@@ -276,7 +276,7 @@ main #project_design_detailed_page .contents {
     display:flex; justify-content: space-between;
     width:1000px; margin:0 auto; height: 620px;
 }
-/* dumpling, book, brush */
+/* detailed-a */
 main #project_design_detailed_page .contents a {
     width: 300px; display: block;
     border: 1px solid #000; 
@@ -327,7 +327,7 @@ main #project_design_card_news .contents span:last-child {
     background-image: url(../images/design/card_news/card1-6.png);
 }
 /* sns-design */
-main #project_design_sns_design {margin-bottom:300px;}
+main #project_design_sns_design {margin:200px 0;}
 main #project_design_sns_design .title {}
 main #project_design_sns_design .title h2 {}
 main #project_design_sns_design .title h1 {}
@@ -368,4 +368,32 @@ main #project_design_sns_design .contents ul li .support {
 }
 main #project_design_sns_design .contents ul li .blank {
     background-image: url(../images/design/sns/sns8.jpg);
+}
+/* banner-page */
+main #project_design_banner_design {margin-bottom:300px;}
+main #project_design_banner_design .title {}
+main #project_design_banner_design .title h2 {}
+main #project_design_banner_design .title h1 {}
+main #project_design_banner_design .contents {
+    display:flex; flex-flow: row wrap; justify-content: space-between;
+    width:1200.8px; height: 470px; margin: 0 auto;
+}
+/* banner-a */
+main #project_design_banner_design .contents a {
+    width: 575.4px; height: 210px; display: block;
+    border: 1px solid #000; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%);
+    background-size: cover; border-radius: 10px;
+}
+main #project_design_banner_design .contents a:first-child {
+    background-image: url(../images/design/banner/banner1.jpg);
+}
+main #project_design_banner_design .contents a:nth-child(2) {
+    background-image: url(../images/design/banner/banner2.jpg);
+}
+main #project_design_banner_design .contents a:nth-child(3) {
+    background-image: url(../images/design/banner/banner3.jpg);
+}
+main #project_design_banner_design .contents a:last-child {
+    background-image: url(../images/design/banner/banner4.jpg);
 }

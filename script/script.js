@@ -30,7 +30,7 @@ card_popup.addEventListener('click',function(){
     card_popup.style.display = 'none'
 })
 
-//sns디자인
+//sns디자인 팝업
 const sns_popup = document.querySelector('#sns_popup')
 const sns_a = document.querySelectorAll('#project_design_sns_design a')
 const sns_popup_img = document.querySelector('#sns_popup img')
@@ -46,6 +46,23 @@ sns_a.forEach(function(t,i,a){
 
 sns_popup.addEventListener('click',function(){
     sns_popup.style.display = 'none'
+})
+
+//배너디자인 팝업
+const banner_a = document.querySelectorAll('#project_design_banner_design a')
+const banner_popup = document.querySelector('#banner_popup')
+const banner_popup_img = document.querySelector('#banner_popup img')
+banner_a.forEach(function(t,i,a){
+    console.log(t,i,a)
+    t.addEventListener('click',function(e){
+        e.preventDefault();
+        banner_popup.style.display = 'block'
+        banner_popup_img.src = `./images/design/banner/banner${i+1}_js.jpg`
+    })
+})  
+
+banner_popup.addEventListener('click',function(){
+    banner_popup.style.display = 'none'
 })
 
 //2. 취미아이콘 팝업
