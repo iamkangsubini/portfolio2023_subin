@@ -274,11 +274,11 @@ main #project_design_detailed_page .title h2 {}
 main #project_design_detailed_page .title h1 {}
 main #project_design_detailed_page .contents {
     display:flex; justify-content: space-between;
-    width:1000px; margin:0 auto; height: 620px;
+    width:1150px; margin:0 auto; height: 620px;
 }
 /* detailed-a */
 main #project_design_detailed_page .contents a {
-    width: 300px; display: block;
+    width: 250px; display: block;
     border: 1px solid #000; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 40%);
     background-size: cover;
@@ -289,8 +289,11 @@ main #project_design_detailed_page .contents a:first-child {
 main #project_design_detailed_page .contents a:nth-child(2) {
     background-image: url(../images/design/detailed_page/detail2.jpg);
 }
-main #project_design_detailed_page .contents a:last-child {
+main #project_design_detailed_page .contents a:nth-child(3) {
     background-image: url(../images/design/detailed_page/detail3.jpg);
+}
+main #project_design_detailed_page .contents a:last-child {
+    background-image: url(../images/design/detailed_page/detail4.jpg);
 }
 
 /* card-news */
